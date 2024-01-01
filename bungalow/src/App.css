@@ -1,0 +1,92 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+
+  margin: 0;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+button {
+  background-color: #444444;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #666666;
+}
+
+li{
+  list-style-type: square;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+nav#menu {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #333333;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav#menu a {
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+nav#menu a:hover {
+  background-color: #555555;
+}
+
+#main {
+  flex: 1;
+  padding: 20px;
+}
+
+#messagesWrapper{
+  width: 100%;
+}
+
+#messages .message{
+  display: flex;
+  width: 100%;
+
+  margin-bottom: 5px;
+
+  background-color: hsl(180, 100%, 97%);
+  color: #1a1a1a;
+  cursor: pointer;
+}
+#messages .message:hover{
+  background-color: hsl(180, 25%, 67%);
+}
+  #messages .message > *{
+    margin: 0;
+    padding: 5px;
+  }
+
+  #messages .message h3{
+    margin: 0;
+  }
+
+  #messages .message .content{
+    flex: 1;
+  }
